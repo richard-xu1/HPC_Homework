@@ -21,3 +21,7 @@ We use a matrix size of 6402 x 6402 where the extra 2 entries are the 0 boundary
 |3 | 0.005153s|
 |4 | 0.010976s|
 |5 | 0.004444s|
+
+# Question 3
+
+I am working with Yash Jalan on this project. We are interested in doing total variation image denoising on a GPU. This algorithm denoises an input image f by finding a function u that minimizes the total variation with an L1 error term using techniques from variational calculus. The solution to the euler-lagrange equation can be solved iteratively by solving a sparse linear system using Jacobi or Gauss Seidel iteration. We plan on implementing this on both a CPU and a GPU and producing some nice images. 
