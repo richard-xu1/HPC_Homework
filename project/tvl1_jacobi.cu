@@ -2,15 +2,10 @@
 #include <stdio.h>
 #include <math.h>
 #include <omp.h>
+#include "utils.h"
 //#include <opencv2/opencv.hpp>
 //using namespace cv;
 
-int main(){
-#include <algorithm>
-#include <stdio.h>
-#include <math.h>
-#include <omp.h>
-#include "utils.h"
 
 struct RGBImage {
   long Xsize;
@@ -173,7 +168,9 @@ int main() {
   read_image(fname, &I1_ref);
   long Xsize = I0.Xsize;
   long Ysize = I0.Ysize;
-
+  
+  printf("Xsize %d \n", Xsize );
+  printf("Ysize %d \n", Ysize);
   // Filter on CPU
   Timer t;
   t.tic();
@@ -237,5 +234,5 @@ int main() {
   free_image(&I1_ref);
   return 0;
 }
-}
+
 
