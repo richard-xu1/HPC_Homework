@@ -1,3 +1,8 @@
+
+# Question 0
+
+We successfully implemented the ROF-dual optimization model and the TV-L1 primal optimization model on a GPU using shared memory. We are testing our algorithm on a set of images and checking their timings and errors. We are also currently working on our report. 
+
 # Question 1
 
 Weak Scaling Study
